@@ -1,0 +1,108 @@
+:root {
+    --main-w: 100%;
+}
+* {
+    box-sizing: border-box;
+    position: relative;
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.return {
+    color: blue;
+    border: none;
+    padding: 0;
+}
+button {
+    border: 2px solid black;
+    padding: 2px 5px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+}
+body {
+    height: 1500px;
+}
+header {
+    position: sticky;
+    z-index: 1;
+    width: var(--main-w);
+    border: 5px dotted red;
+    padding: 55px;
+    top: 0;
+    background-color: green;
+}
+main {
+    border: 5px solid black;
+    padding: 10px;
+    width: var(--main-w);
+    min-height: 125px;
+    max-height: 150px;
+    top: 5px;
+}
+
+main h1~p {
+    color: blue;
+}
+main>h2 {
+    color: red;
+}
+.prin .txt {
+    display: inline-block;
+    margin: 30px 10px;
+}
+.prin-event {
+    background-color: white;
+    color: purple;
+    border: 5px solid green;
+    padding: 10px;
+    width: var(--main-w);
+    height: 125px;
+    bottom: 129px;
+    right: 100vw;
+}
+.prin {
+    font-size: 10px;
+    bottom: 10px;
+    width: var(--main-w);
+    height: 125px;
+    text-align: center;
+}
+.prin h1 {
+    font-size: 2em;
+}
+.prin h2 {
+    font-size: 1.3rem;
+}
+footer {
+    top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@keyframes entrar {
+    from {
+        right: 100vw;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes salir {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100vw;
+    }
+}
