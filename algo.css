@@ -65,7 +65,7 @@ main {
 main h1~p {
     color: blue;
 }
-main>h2 {
+article > h2 {
     color: red;
 }
 .prin .txt {
