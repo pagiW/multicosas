@@ -18,6 +18,9 @@ function cambio(evento) {
     }
     else {
         presi.removeEventListener('click', presionar);
+        header.innerHTML = '<form class="formulario" id="formulario"><input list="opciones" name="opciones" id="op"><datalist id="opciones"><option value="si"></option><option value="no"></option></datalist><button type="submit" id="boton">seleccionar</button></form>';
+        header.style.backgroundColor = "green";
+        state = 0;
     }
 }
 cambio(pantalla);
