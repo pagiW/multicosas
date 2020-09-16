@@ -19,7 +19,7 @@ function cambio(evento) {
         presi.addEventListener('click', presionar)
         header.addEventListener("click", clickhover);
         header.removeEventListener("mouseover", hover);
-        header.removeEventListener("mouseleave", nohover);
+        main.removeEventListener("mouseleave", nohover);
         header.innerHTML += "<p id='par'></p>";
     }
     else {
